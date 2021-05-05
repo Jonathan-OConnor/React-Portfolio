@@ -1,0 +1,7 @@
+/node_modules
+package-lock.json
+.DS_Store
+client/build/
+client/public/uploads
+.env
+client/node_modules
