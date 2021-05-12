@@ -19,15 +19,12 @@ app.use(express.json())
 // static paths (ex. assets, js, images, etc) served automatically from:
 app.use(express.static(STATIC_PATH))
 
+
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      type: 'OAuth2',
       user: process.env.MAIL_USERNAME,
-      pass: process.env.MAIL_PASSWORD,
-      clientId: process.env.OAUTH_CLIENTID,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN
+      pass: process.env.MAIL_PASSWORD
     }
   });
 
