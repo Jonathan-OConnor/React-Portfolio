@@ -10,10 +10,10 @@ function PortfolioCard(props) {
                 <p class="card-text">{props.description}</p>
                 <div className="row">
                     <div className="col-6 d-flex justify-content-center" >
-                        <a href={props.link} class="btn btn-primary">View Deployed Project</a>
+                        <a rel="noreferrer" target="_blank" href={props.link} class="btn btn-primary">View Deployed Project</a>
                     </div>
                     <div className="col-6 d-flex justify-content-center">
-                        <a href={props.github} class="btn btn-primary">View Project on Github</a>
+                        <a rel="noreferrer" target="_blank" href={props.github} class="btn btn-primary">View Project on Github</a>
                     </div>
 
 
