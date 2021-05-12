@@ -23,7 +23,6 @@ function App() {
           <Route exact path='/resume' component={Resume} />
           <Route path='*' component={NotFound} />
         </Switch>
-
       </BrowserRouter>
 
     </div>

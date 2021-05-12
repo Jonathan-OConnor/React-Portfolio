@@ -3,6 +3,7 @@ import Grow from '@material-ui/core/Grow';
 import Navbar from "../components/Navbar"
 
 function Resume(props) {
+    console.log(window.location.pathname)
     useEffect(() => {
         if (window.location.pathname !== "/resume"){
             window.location.pathname="/resume"}
