@@ -1,4 +1,8 @@
 function router(app, API_URL, STATIC_PATH, transporter, mailOptions) {
+    app.get('*', function(req, res) {
+        res.sendFile('index.html', {root: path.join(__dirname, '../../client/build/')});
+      });
+      
     app.post('/api/email', async function (req, res) {
         const email = JSON.stringify(req.body.email)
         const msg = JSON.stringify(req.body.msg)
