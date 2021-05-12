@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Carousel } from "react-bootstrap"
 import Grow from '@material-ui/core/Grow';
 import PortfolioCard from '../../components/PortfolioCard'
@@ -6,12 +6,19 @@ import Navbar from "../../components/Navbar"
 import "./NewPortfolio.css"
 
 function NewPortfolio(props) {
+   
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
         console.log(index)
     };
+
+    useEffect(() => {
+        if (window.location.pathname !== "/portfolio"){
+            window.location.pathname="/portfolio"}
+      }, []);
+
     return (
         <div style={{ minHeight: "100vh" }}>
             <Navbar />

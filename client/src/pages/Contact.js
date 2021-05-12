@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Grow from '@material-ui/core/Grow';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -9,6 +9,11 @@ const validator = require("email-validator")
 
 
 function Contact(props) {
+    useEffect(() => {
+        if (window.location.pathname !== "/contact"){
+            window.location.pathname="/contact"}
+      }, []);
+
     const [senderEmail, setSenderEmail] = useState("")
     const [senderMessage, setSenderMessage] = useState("")
     const [invalidEmail, setInvalidEmail] = useState(false)

@@ -7,31 +7,31 @@ function Navbar(props) {
     function buildActive(path) {
         switch (path) {
             case "/":
-                return (<div className="navbar-nav"> <a className="nav-link active" aria-current="page" href="/">About Me</a>
-                    <a className="nav-link" href="/resume">Resume</a>
-                    <a className="nav-link" href="/portfolio">Past Projects</a>
-                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+                return (<div className="navbar-nav"> <Link className="nav-link active" aria-current="page" to="/">About Me</Link>
+                    <Link className="nav-link" to="/resume">Resume</Link>
+                    <Link className="nav-link" to="/portfolio">Past Projects</Link>
+                    <Link className="nav-link" to="/contact">Contact Me</Link></div>)
             case "/portfolio":
-                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
-                    <a className="nav-link" href="/resume">Resume</a>
-                    <a className="nav-link active" href="/portfolio">Past Projects</a>
-                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
+                    <Link className="nav-link" to="/resume">Resume</Link>
+                    <Link className="nav-link active" to="/portfolio">Past Projects</Link>
+                    <Link className="nav-link" to="/contact">Contact Me</Link></div>)
             case "/resume":
-                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
-                    <a className="nav-link active" href="/resume">Resume</a>
-                    <a className="nav-link" href="/portfolio">Past Projects</a>
-                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
+                    <Link className="nav-link active" to="/resume">Resume</Link>
+                    <Link className="nav-link" to="/portfolio">Past Projects</Link>
+                    <Link className="nav-link" to="/contact">Contact Me</Link></div>)
             case "/contact":
-                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
-                    <a className="nav-link" href="/resume">Resume</a>
-                    <a className="nav-link" href="/portfolio">Past Projects</a>
-                    <a className="nav-link active" href="/contact">Contact Me</a></div>)
+                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
+                    <Link className="nav-link" to="/resume">Resume</Link>
+                    <Link className="nav-link" to="/portfolio">Past Projects</Link>
+                    <Link className="nav-link active" to="/contact">Contact Me</Link></div>)
         }
         // return navbar with no actives if user is on an invalid page
-        return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
-            <a className="nav-link" href="/resume">Resume</a>
-            <a className="nav-link" href="/portfolio">Past Projects</a>
-            <a className="nav-link" href="/contact">Contact Me</a></div>)
+        return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
+            <Link className="nav-link" to="/resume">Resume</Link>
+            <Link className="nav-link" to="/portfolio">Past Projects</Link>
+            <Link className="nav-link" to="/contact">Contact Me</Link></div>)
     }
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

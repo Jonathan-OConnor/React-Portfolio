@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar"
 
 function Portfolio(props) {
 
+    
+
     return (
         <div style={{ minHeight: "100%" }}>
             <Navbar />

@@ -1,9 +1,12 @@
-import React from "react"
+import React, {useEffect} from "react"
 import Grow from '@material-ui/core/Grow';
 import Navbar from "../components/Navbar"
 
 function Resume(props) {
-
+    useEffect(() => {
+        if (window.location.pathname !== "/resume"){
+            window.location.pathname="/resume"}
+      }, []);
     return (
         <div style={{ minHeight: "100vh" }}>
             <Navbar />

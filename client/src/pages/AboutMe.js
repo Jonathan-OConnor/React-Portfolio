@@ -1,10 +1,16 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Grow from '@material-ui/core/Grow';
 import Button from '@material-ui/core/Button';
 import { Redirect } from "react-router-dom"
 import Navbar from "../components/Navbar"
 
 function AboutMe(props) {
+
+    useEffect(() => {
+        if (window.location.pathname !== "/"){
+            window.location.pathname="/"}
+      }, []);
+
     const [contactRedirect, setContactRedirect] = useState(false)
     function redirect() {
         setContactRedirect(true)
@@ -12,7 +18,7 @@ function AboutMe(props) {
     return (
         <div style={{minHeight:"100vh"}}>
             <Navbar />
-            {contactRedirect ? <Redirect to='/Contact' /> : ''}
+            {contactRedirect ? <Redirect to='/contact' /> : ''}
             <Grow in={true}>
                 <div className="container">
                     <div className="row" style={{ width: "100%", height: "500px", marginTop: "100px" }}>
