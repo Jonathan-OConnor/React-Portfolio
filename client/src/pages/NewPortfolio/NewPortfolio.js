@@ -19,7 +19,7 @@ function NewPortfolio(props) {
 
             window.location.pathname = "/portfolio"
         }
-    }, []);
+    });
 
     return (
         <div style={{ minHeight: "100vh" }}>

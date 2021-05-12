@@ -13,7 +13,7 @@ function Contact(props) {
     useEffect(() => {
         if (window.location.pathname !== "/contact"){
             window.location.pathname="/contact"}
-      }, []);
+      });
 
     const [senderEmail, setSenderEmail] = useState("")
     const [senderMessage, setSenderMessage] = useState("")

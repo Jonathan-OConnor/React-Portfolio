@@ -7,7 +7,7 @@ function Resume(props) {
     useEffect(() => {
         if (window.location.pathname !== "/resume"){
             window.location.pathname="/resume"}
-      }, []);
+      });
     return (
         <div style={{ minHeight: "100vh" }}>
             <Navbar />

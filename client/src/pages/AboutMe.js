@@ -9,7 +9,7 @@ function AboutMe(props) {
     useEffect(() => {
         if (window.location.pathname !== "/"){
             window.location.pathname="/"}
-      }, []);
+      });
 
     const [contactRedirect, setContactRedirect] = useState(false)
     function redirect() {
