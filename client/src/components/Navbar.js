@@ -3,34 +3,35 @@ import { Link } from 'react-router-dom'
 
 function Navbar(props) {
     var path = window.location.pathname
+    path = path.toLowerCase()
     function buildActive(path) {
         switch (path) {
             case "/":
-                return (<div className="navbar-nav"> <Link className="nav-link active" aria-current="page" to="/">About Me</Link>
-                    <Link className="nav-link" to="/Resume">Resume</Link>
-                    <Link className="nav-link" to="/Portfolio">Past Projects</Link>
-                    <Link className="nav-link" to="/Contact">Contact Me</Link></div>)
-            case "/Portfolio":
-                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
-                    <Link className="nav-link" to="/Resume">Resume</Link>
-                    <Link className="nav-link active" to="/Portfolio">Past Projects</Link>
-                    <Link className="nav-link" to="/Contact">Contact Me</Link></div>)
-            case "/Resume":
-                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
-                    <Link className="nav-link active" to="/Resume">Resume</Link>
-                    <Link className="nav-link" to="/Portfolio">Past Projects</Link>
-                    <Link className="nav-link" to="/Contact">Contact Me</Link></div>)
-            case "/Contact":
-                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
-                    <Link className="nav-link" to="/Resume">Resume</Link>
-                    <Link className="nav-link" to="/Portfolio">Past Projects</Link>
-                    <Link className="nav-link active" to="/Contact">Contact Me</Link></div>)
+                return (<div className="navbar-nav"> <a className="nav-link active" aria-current="page" href="/">About Me</a>
+                    <a className="nav-link" href="/resume">Resume</a>
+                    <a className="nav-link" href="/portfolio">Past Projects</a>
+                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+            case "/portfolio":
+                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
+                    <a className="nav-link" href="/resume">Resume</a>
+                    <a className="nav-link active" href="/portfolio">Past Projects</a>
+                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+            case "/resume":
+                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
+                    <a className="nav-link active" href="/resume">Resume</a>
+                    <a className="nav-link" href="/portfolio">Past Projects</a>
+                    <a className="nav-link" href="/contact">Contact Me</a></div>)
+            case "/contact":
+                return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
+                    <a className="nav-link" href="/resume">Resume</a>
+                    <a className="nav-link" href="/portfolio">Past Projects</a>
+                    <a className="nav-link active" href="/contact">Contact Me</a></div>)
         }
         // return navbar with no actives if user is on an invalid page
-        return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
-            <Link className="nav-link" to="/Resume">Resume</Link>
-            <Link className="nav-link" to="/Portfolio">Past Projects</Link>
-            <Link className="nav-link" to="/Contact">Contact Me</Link></div>)
+        return (<div className="navbar-nav"> <a className="nav-link" aria-current="page" href="/">About Me</a>
+            <a className="nav-link" href="/resume">Resume</a>
+            <a className="nav-link" href="/portfolio">Past Projects</a>
+            <a className="nav-link" href="/contact">Contact Me</a></div>)
     }
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
