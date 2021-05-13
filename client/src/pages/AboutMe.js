@@ -5,12 +5,8 @@ import { Redirect } from "react-router-dom"
 import Navbar from "../components/Navbar"
 
 function AboutMe(props) {
-    console.log(window.location.pathname)
-    useEffect(() => {
-        if (window.location.pathname !== "/"){
-            window.location.pathname="/"}
-      });
-
+   
+   
     const [contactRedirect, setContactRedirect] = useState(false)
     function redirect() {
         setContactRedirect(true)

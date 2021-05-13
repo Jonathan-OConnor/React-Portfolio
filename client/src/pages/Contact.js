@@ -9,11 +9,7 @@ const validator = require("email-validator")
 
 
 function Contact(props) {
-    console.log(window.location.pathname)
-    useEffect(() => {
-        if (window.location.pathname !== "/contact"){
-            window.location.pathname="/contact"}
-      });
+
 
     const [senderEmail, setSenderEmail] = useState("")
     const [senderMessage, setSenderMessage] = useState("")
