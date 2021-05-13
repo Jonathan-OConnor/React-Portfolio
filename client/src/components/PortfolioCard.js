@@ -11,7 +11,7 @@ function PortfolioCard(props) {
                 </div>
                 <div class="col-md-3">
                     <div class="card-body">
-                        <h5 class="card-title">{props.title}</h5>
+                        <h3 class="card-title">{props.title}</h3>
                         <p class="card-text">{props.description}</p>
                         <div style={{paddingTop: "50px"}}>
                             <p class="card-text">Github Repository: <a href={props.github}>Here</a></p>

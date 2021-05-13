@@ -84,8 +84,8 @@ function Contact(props) {
             <Grow in={true}>
                 <div className="container">
                     <h1 className="text-center" style={{ marginTop: '50px' }}>Contact Me</h1>
-                    <h3 className="text-center">Email: JohnPierreOConnor@gmail.com</h3>
-                    <h3 className="text-center">Phone Number: 416-728-5011</h3>
+                    <h4 className="text-center">Email: JohnPierreOConnor@gmail.com</h4>
+                    <h4 className="text-center">Phone Number: 416-728-5011</h4>
                     <div style={{ backgroundColor: "white", border: "2px solid black", padding: "25px", paddingBottom: "50px", paddingTop: "20px", marginTop: "50px" }}>
                         <form className={classes.root}>
                             <h4>Send me a message:</h4>
