@@ -9,7 +9,7 @@ function Portfolio(props) {
 
     return (
         <div style={{ minHeight: "100%" }}>
-            <Navbar />
+            <Navbar mobile={props.mobile}/>
             <Grow in={true}>
                 <div className="container" style={{ paddingBottom: "20px" }}>
                     <h1 className="text-center" style={{ marginTop: '50px' }}>Past Projects</h1>

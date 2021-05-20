@@ -15,7 +15,7 @@ function NewPortfolio(props) {
 
     return (
         <div style={{ minHeight: "100vh" }}>
-            <Navbar />
+            <Navbar mobile={props.mobile}/>
             <Grow in={true}>
                 <div>
                     <div className="d-block w-100" style={{ position: "relative" }}>

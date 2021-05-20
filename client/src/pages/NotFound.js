@@ -6,7 +6,7 @@ function NotFound(props) {
 
     return (
         <div style={{minHeight:"100vh"}}>
-            <Navbar />
+            <Navbar mobile={props.mobile}/>
             <Grow in={true}>
                 <div className="container">
                     <h1 className="text-center" style={{ marginTop: '50px' }}>404 Page Not Found :(</h1>

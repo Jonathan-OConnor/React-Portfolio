@@ -6,7 +6,7 @@ function Resume(props) {
 
     return (
         <div style={{ minHeight: "100vh" }}>
-            <Navbar />
+            <Navbar mobile={props.mobile}/>
             <Grow in={true}>
                 <div className="container">
                     <h1 className="text-center" style={{ marginTop: '50px' }}>Page is under construction</h1>
