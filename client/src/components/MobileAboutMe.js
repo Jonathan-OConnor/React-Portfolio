@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom"
 function MobileAboutMe(props) {
     return (
         <div className="container">
-            <div className="row" style={{ width: "100%" }}>
+          
                 <div className="row">
                     <div className="col-12 text-center">
                         <img src='https://i.imgur.com/IZIAwjB.png' style={{ width: '100%', border: '10px solid white', borderRadius: "50%", maxWidth: "250px" }} />
@@ -33,7 +33,7 @@ function MobileAboutMe(props) {
 
                 </div>
             </div>
-        </div>
+   
     )
 }
 
