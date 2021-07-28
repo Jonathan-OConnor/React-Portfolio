@@ -26,12 +26,13 @@ function Navbar(props) {
                     <Link className="nav-link" to="/resume">Resume</Link>
                     <Link className="nav-link" to="/portfolio">Past Projects</Link>
                     <Link className="nav-link active" to="/contact">Contact Me</Link></div>)
+            default:
+                // return navbar with no actives if user is on an invalid page
+                return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
+                    <Link className="nav-link" to="/resume">Resume</Link>
+                    <Link className="nav-link" to="/portfolio">Past Projects</Link>
+                    <Link className="nav-link" to="/contact">Contact Me</Link></div>)
         }
-        // return navbar with no actives if user is on an invalid page
-        return (<div className="navbar-nav"> <Link className="nav-link" aria-current="page" to="/">About Me</Link>
-            <Link className="nav-link" to="/resume">Resume</Link>
-            <Link className="nav-link" to="/portfolio">Past Projects</Link>
-            <Link className="nav-link" to="/contact">Contact Me</Link></div>)
     }
     if (props.mobile) {
         return (<nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">

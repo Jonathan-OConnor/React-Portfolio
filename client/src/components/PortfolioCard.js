@@ -1,5 +1,4 @@
 import React from "react"
-import Button from '@material-ui/core/Button';
 
 function PortfolioCard(props) {
 
@@ -14,10 +13,9 @@ function PortfolioCard(props) {
                         <h3 class="card-title">{props.title}</h3>
                         <p class="card-text">{props.description}</p>
                         <div style={{paddingTop: "50px"}}>
-                            <p class="card-text">Github Repository: <a href={props.github}>Here</a></p>
-                            <p class="card-text">Deployed Application: <a href={props.link}>Here</a></p>
+                            <p class="card-text">Github Repository: <a href={props.github}><button className="btn btn-link">Here</button></a></p>
+                            <p class="card-text">Deployed Application: <a href={props.link}><button className="btn btn-link">Here</button></a></p>
                         </div>
-
                     </div>
                 </div>
             </div>

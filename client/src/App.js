@@ -4,10 +4,6 @@ import "./App.css"
 
 //pages
 import AboutMe from './pages/AboutMe'
-import Contact from './pages/Contact'
-import Resume from './pages/Resume'
-import NotFound from './pages/NotFound'
-import NewPortfolio from './pages/NewPortfolio/NewPortfolio'
 
 
 function App() {
@@ -35,11 +31,7 @@ function App() {
     <div style={{ height: "100%", backgroundImage: "url('https://i.imgur.com/ebn2GCd.png')" }}>
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' render={(props) => (<AboutMe mobile={isMobile} />)} />
-          <Route exact path='/portfolio' render={(props) => (<NewPortfolio mobile={isMobile} />)}/>
-          <Route exact path='/contact' render={(props) => (<Contact mobile={isMobile} />)} />
-          <Route exact path='/resume' render={(props) => (<Resume mobile={isMobile} />)} />
-          <Route path='*' render={(props) => (<NotFound mobile={isMobile} />)} />
+          <Route path='*' render={(props) => (<AboutMe mobile={isMobile} />)} />
         </Switch>
       </BrowserRouter>
 
