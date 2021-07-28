@@ -32,7 +32,7 @@ function DesktopAboutMe(props) {
             <div style={{borderTop: "2px solid black"}}>
                 <h1 className="text-center" style={{ paddingTop: "50px" }}>Past Projects</h1>
             </div>
-            <div style={{ minHeight: "100vh" }} id="PastProjects">
+            <div className="container"style={{ minHeight: "100vh" }} id="PastProjects">
                 <div>
                     <div className="d-block w-100" style={{ position: "relative" }}>
                         <div className="d-flex justify-content-center">
