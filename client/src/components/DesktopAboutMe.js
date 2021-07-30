@@ -19,7 +19,7 @@ function DesktopAboutMe(props) {
                         </div>
                         <div className="row" style={{ marginTop: "30px" }}>
                             <p>
-                                I'm a 22 year-old software developer living in Toronto. I am currently enrolled in my final semester for my Bachelor of Arts degree at the University of Toronto where I intend to graduate this spring. During my time there, I majored in Economics and minored in both History and Mathematics. I am also currently enrolled in the Full-Stack Coding Bootcamp offered by the University of Toronto School of Continuing Studies where I learned the skills used to build this webpage. I look forward to hopefully beginning my career in software development this spring following both my graduation and my completion of the UofT SCS coding bootcamp.
+                                I'm a 22 year-old software developer living in Toronto. I am a recent graduate of the University of Toronto where I graduated with an honours Bachelors of Arts. During my time there, I majored in Economics and minored in both History and Mathematics. I have also recently completed the Full-Stack Coding Bootcamp offered by the University of Toronto School of Continuing Studies where I learned valuable, industry-standard skills for web development. I look forward to hopefully beginning my career in software development where I can continue to cultivate my skills while contributing meaningfully to full-stack projects.
                             </p>
                         </div>
                         <div className="text-center" style={{ marginTop: "100px" }}>
