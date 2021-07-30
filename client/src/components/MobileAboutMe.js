@@ -40,6 +40,16 @@ function MobileAboutMe(props) {
                 <div>
                     <div className="d-block w-100" style={{ position: "relative" }}>
                         <div className="d-flex justify-content-center">
+                            <PortfolioCard title="Family Event Website" description="This is a personal project I developed to help in planning and communicating large family events. This website has a secure log-in feature, an editable calendar which updates and pulls from a MongoDB database, and an email application which uses Nodemailer.js" link="https://oconnorfarm.com" github="https://github.com/Jonathan-OConnor/The-Farm" image="https://i.imgur.com/EuojdSN.png" />
+                        </div>
+                    </div>
+
+                    <div className="d-flex justify-content-center">
+                        <div style={{ width: "50%", borderBottom: "2px solid grey" }}></div>
+                    </div>
+                    
+                    <div className="d-block w-100" style={{ position: "relative" }}>
+                        <div className="d-flex justify-content-center">
                             <PortfolioCard title="Daily Mood Tracker Application" description="Mood tracker is an app that allows users to log their emotions on a daily basis. The app stores each entry in association with the date so that the user can easily navigate back to each entry. Their daily emotions are then graphed, converting their daily mood entries into visual data." link="https://mood-notes-tracker.herokuapp.com/index.html" github="https://github.com/Humble-Attackers/Group-Mood-Tracker" image="https://camo.githubusercontent.com/a13ee912cfd63f1de9fcbd8f2a78865c2b24fd599c34c3e1d3cfe3b9989d80db/68747470733a2f2f692e696d6775722e636f6d2f716537667856512e706e67" />
                         </div>
                     </div>
