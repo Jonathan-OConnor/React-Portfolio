@@ -29,11 +29,21 @@ function DesktopAboutMe(props) {
                     </div>
                 </div>
             </div>
-            <div style={{borderTop: "2px solid black"}}>
-                <h1 className="text-center" style={{ paddingTop: "50px" }}>Past Projects</h1>
+            <div style={{ borderTop: "2px solid black" }}>
+                <h2 className="text-center" style={{ paddingTop: "50px" }}>Past Projects</h2>
             </div>
-            <div className="container"style={{ minHeight: "100vh" }} id="PastProjects">
+            <div className="container" style={{ minHeight: "100vh" }} id="PastProjects">
                 <div>
+                    <div className="d-block w-100" style={{ position: "relative" }}>
+                        <div className="d-flex justify-content-center">
+                            <PortfolioCard title="Family Event Website" description="This is a personal project I developed to help in planning and communicating large family events. This website has a secure log-in feature, an editable calendar which updates and pulls from a MongoDB database, and an email application which uses Nodemailer.js" link="https://oconnorfarm.com" github="https://github.com/Jonathan-OConnor/The-Farm" image="https://i.imgur.com/EuojdSN.png" />
+                        </div>
+                    </div>
+
+                    <div className="d-flex justify-content-center">
+                        <div style={{ width: "50%", borderBottom: "2px solid grey" }}></div>
+                    </div>
+
                     <div className="d-block w-100" style={{ position: "relative" }}>
                         <div className="d-flex justify-content-center">
                             <PortfolioCard title="Daily Mood Tracker Application" description="Mood tracker is an app that allows users to log their emotions on a daily basis. The app stores each entry in association with the date so that the user can easily navigate back to each entry. Their daily emotions are then graphed, converting their daily mood entries into visual data." link="https://mood-notes-tracker.herokuapp.com/index.html" github="https://github.com/Humble-Attackers/Group-Mood-Tracker" image="https://camo.githubusercontent.com/a13ee912cfd63f1de9fcbd8f2a78865c2b24fd599c34c3e1d3cfe3b9989d80db/68747470733a2f2f692e696d6775722e636f6d2f716537667856512e706e67" />
@@ -61,8 +71,8 @@ function DesktopAboutMe(props) {
                     </div>
                 </div>
             </div>
-            <div id="Contact" style={{borderTop: "2px solid black", paddingTop: "50px"}}>
-                <h2 className="text-center" style={{paddingBottom: "20px"}}>Contact</h2>
+            <div id="Contact" style={{ borderTop: "2px solid black", paddingTop: "50px" }}>
+                <h2 className="text-center" style={{ paddingBottom: "20px" }}>Contact</h2>
                 <p className="text-center">Phone: 416-728-5011</p>
                 <p className="text-center">Email:  <a href="mailto:JonPierreOConnor@gmail.com">JonPierreOConnor@gmail.com</a></p>
                 <div className="d-flex justify-content-center">
