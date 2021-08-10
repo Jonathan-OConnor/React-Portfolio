@@ -21,7 +21,7 @@ function MobileAboutMe(props) {
                         </div>
                         <div className="row" style={{ marginTop: "30px" }}>
                             <p>
-                            I'm a 22 year-old software developer living in Toronto. I am a recent graduate of the University of Toronto where I graduated with an honours Bachelors of Arts. During my time there, I majored in Economics and minored in both History and Mathematics. I have also recently completed the Full-Stack Coding Bootcamp offered by the University of Toronto School of Continuing Studies where I learned valuable, industry-standard skills for web development. I look forward to hopefully beginning my career in software development where I can continue to cultivate my skills while contributing meaningfully to full-stack projects.
+                            I'm a 22 year-old software developer living in Toronto. I am a recent graduate of the University of Toronto where I graduated with an honours Bachelors of Arts. During my time there, I majored in Economics and minored in both History and Mathematics. I have recently completed the Full-Stack Coding Bootcamp offered by the University of Toronto School of Continuing Studies where I learned valuable, industry-standard skills for web development. I look forward to hopefully beginning my career in software development where I can continue to cultivate my skills while contributing meaningfully to full-stack projects.
                             </p>
                         </div>
                     </div>
@@ -68,11 +68,6 @@ function MobileAboutMe(props) {
                         <div style={{ width: "50%", borderBottom: "2px solid grey" }}></div>
                     </div>
 
-                    <div className="d-block w-100" style={{ position: "relative" }}>
-                        <div className="d-flex justify-content-center" >
-                            <PortfolioCard title="Tinder Clone: Woofr" description="Woofr is an application that provides its users with a platform to buy and sell dogs. It is a basic Tinder clone with the of making finding dogs in shelters or dogs from breeders streamlined and fun." link="" github="https://github.com/P3-Stargazers/Woofr" image="https://i.imgur.com/DbQN1Fi.png" />
-                        </div>
-                    </div>
                 </div>
             </div>
             <div id="Contact" style={{ borderTop: "2px solid black", paddingTop: "50px" }}>

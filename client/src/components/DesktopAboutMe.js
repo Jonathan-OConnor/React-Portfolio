@@ -63,12 +63,6 @@ function DesktopAboutMe(props) {
                     <div className="d-flex justify-content-center">
                         <div style={{ width: "50%", borderBottom: "2px solid grey" }}></div>
                     </div>
-
-                    <div className="d-block w-100" style={{ position: "relative" }}>
-                        <div className="d-flex justify-content-center" >
-                            <PortfolioCard title="Tinder Clone: Woofr" description="Woofr is an application that provides its users with a platform to buy and sell dogs. It is a basic Tinder clone with the of making finding dogs in shelters or dogs from breeders streamlined and fun." link="" github="https://github.com/P3-Stargazers/Woofr" image="https://i.imgur.com/DbQN1Fi.png" />
-                        </div>
-                    </div>
                 </div>
             </div>
             <div id="Contact" style={{ borderTop: "2px solid black", paddingTop: "50px" }}>
