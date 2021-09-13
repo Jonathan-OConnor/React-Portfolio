@@ -8,7 +8,7 @@ function MobileAboutMe(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <img src='https://i.imgur.com/IZIAwjB.png' style={{ width: '100%', border: '10px solid white', borderRadius: "50%", maxWidth: "250px" }} />
+                        <img src='./img/profile.jpg' style={{ width: '100%', border: '10px solid white', borderRadius: "50%", maxWidth: "250px" }} />
                     </div>
                 </div>
                 <div className="row">

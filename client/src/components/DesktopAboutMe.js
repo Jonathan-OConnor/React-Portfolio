@@ -8,7 +8,7 @@ function DesktopAboutMe(props) {
             <div className="container" style={{ paddingTop: "60px" }} id="AboutMe">
                 <div className="row" style={{ width: "100%", height: "500px" }}>
                     <div className="col-4">
-                        <img src='https://i.imgur.com/IZIAwjB.png' style={{ width: '100%', border: '10px solid #D3D3D3', borderRadius: "50%" }} />
+                        <img src='./img/profile.jpg' style={{ width: '100%', border: '10px solid #D3D3D3', borderRadius: "50%" }} />
                     </div>
                     <div className="col-8">
                         <div className="row">
